@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.contact .contact__wrapper .text-content .social-icons .linkedin-icon, .contact .contact__wrapper .text-content .social-icons .facebook-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+body {
+  height: 100%;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.readmore {
+  color: #fff;
+  width: 182px;
+  height: 47px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 15px 39px 18px 44px;
+}
+
+.readmore-bg {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.header {
+  background: url("../../img/header/bg-header.jpg") 0 0/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.header .header__title {
+  padding: 250px 0 120px 0;
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+}
+.header .header__title:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  bottom: 120px;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  margin: 0px 0px -30px -25px;
+}
+.header .header__title .header__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header .header__title h1 {
+  color: #fff;
+  font-size: 34px;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  line-height: 1.18;
+  letter-spacing: 5.44px;
+}
+.header .header__title h5 {
+  color: #fff;
+  font-size: 24px;
+  top: 250px;
+  left: 0;
+  width: 100%;
+  line-height: 1.18;
+  letter-spacing: 5.44px;
+  text-align: center;
+}
+.header .header__button {
+  display: flex;
+  justify-content: center;
+  margin-left: -50px;
+}
+.header .arrow {
+  text-align: center;
+  margin-top: 75px;
+  margin-left: -50px;
+}
+.header .arrow .arrow__down {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 550;
+  background-color: transparent;
+}
+
+.about .about__wrapper {
+  margin-bottom: 65px;
+}
+.about .about__menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px auto;
+  max-width: 500px;
+  margin-bottom: 130px;
+}
+.about .about__menu .home {
+  color: #ada074;
+}
+.about .about__menu a {
+  color: #000;
+}
+.about .about__title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+.about .about__title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background-color: #000;
+  margin: 0px 0px 0px -25px;
+}
+.about .about__text {
+  max-width: 688px;
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 25.89px;
+  margin: 0px auto;
+}
+.about .about__container {
+  padding: 0px 15px;
+}
+
+.item-about .item-about__icon {
+  margin: 0px auto 40px auto;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-about .item-about__title {
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px;
+}
+.item-about .item-about__text {
+  text-align: center;
+  color: #868585;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.portfolio {
+  margin-top: 40px;
+  padding-top: 40px;
+  background-color: #f0f0f0;
+}
+.portfolio .porfolio__items {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.portfolio .porfolio__items .item {
+  padding-top: 15px;
+  padding-right: 30px;
+  max-width: 540;
+  max-height: 370px;
+}
+.portfolio .porfolio__footer {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+.portfolio img {
+  width: 100%;
+  height: 100%;
+}
+
+.title2 {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.44px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+.title2:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  height: 1px;
+  left: 50%;
+  background-color: #000;
+  margin: 0px 0px 0px -25px;
+}
+
+.menu {
+  font-size: 15px;
+  margin: 40px auto;
+  text-align: center;
+  letter-spacing: 2.5px;
+  word-spacing: 40px;
+}
+.menu .menu__all {
+  color: #ada074;
+}
+
+.button {
+  margin-right: 50px;
+  text-align: center;
+  font-family: Lato;
+}
+
+.ourpartners {
+  background: url("../../img/our_partners/partners.jpg") 0 0/cover no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.contact {
+  padding: 200px 0;
+}
+.contact .contact__header {
+  margin-bottom: 150px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.contact .contact__header:after {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 100px;
+  height: 1px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact .contact__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact .contact__wrapper .form-content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+}
+.contact .contact__wrapper .form-content .input-area {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact__wrapper .form-content .input-area label {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contact .contact__wrapper .form-content .user-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contact__wrapper .form-content input {
+  max-width: 160px;
+  width: 100%;
+  border-top: 1px solid #000;
+  background: #f8f7f7;
+  height: 35px;
+}
+.contact .contact__wrapper .form-content .textarea-content {
+  margin-top: 75px;
+}
+.contact .contact__wrapper .form-content .textarea-content textarea {
+  resize: none;
+  max-width: 380px;
+  height: 120px;
+  background: #f8f7f7;
+  border-top: 1px solid #000;
+}
+.contact .contact__wrapper .form-content .send-button {
+  color: #000;
+  background: transparent;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-left: auto;
+}
+.contact .contact__wrapper .text-content .idea-text {
+  line-height: 23px;
+}
+.contact .contact__wrapper .text-content .user {
+  font-weight: 700;
+  margin-top: 40px;
+}
+.contact .contact__wrapper .text-content .social-icons {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.footer {
+  background-color: #3c3c3c;
+}
+.footer .footer__row {
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footer__link {
+  word-spacing: 30px;
+}
+.footer .footer__link a {
+  color: #a4a4a4;
+  font-family: Lato;
+  font-size: 14px;
+}
+
+.copyright {
+  padding-top: 60px;
+  color: #6c6c6c;
+}
+
+/*# sourceMappingURL=style.css.map */
